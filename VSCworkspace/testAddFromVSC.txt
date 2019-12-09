@@ -1,0 +1,16 @@
+import requests
+
+
+def get_vimeo():
+    """Vimeo response."""
+    vimeoToken = "ddca1270b4b418708341220454dad15f"
+    headers = {'Authorization': 'Bearer ' + vimeoToken}
+    r = requests.get("https://api.vimeo.com/videos/298113293", headers=headers)
+    vimeoToken = "ddca1270b4b418708341220454dad15f"
+    headers = {'Authorization': 'Bearer ' + vimeoToken}
+    r = requests.get("https://api.vimeo.com/videos/298113293", headers=headers)
+    print(r)
+
+
+if __name__ == "__main__":
+    get_vimeo()
